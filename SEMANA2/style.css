@@ -1,0 +1,116 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-bg-color: #FAF7FD;
+    --purple: #BB99DD;
+}
+
+body {
+    display: flex;
+    background-color: var(--body-bg-color);
+    color: var(--purple);
+    font-family: "Poppins";
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .tree_complete {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.tree_complete .prof_pic {
+  width: 213px;
+  height: 213px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--purple);
+  border-radius: 50%;
+}
+
+.tree_complete .prof_pic img {
+  width: 200px;
+  height: 200px;
+
+  border-radius: 50%;
+}
+
+.tree_complete .instagram_nick {
+  margin-top: 15px;
+  color: var(--purple);
+}
+
+.tree_complete .tree_link {
+  margin-top: 17px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tree_link .link {
+  margin-top: 16px;
+  width: 325px;
+
+  border: 2px solid var(--purple);
+  border-radius: 4px;
+
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--purple);
+  font-weight: 600;
+
+  padding: 12px 0;
+
+  transition: ease 0.3s;
+}
+
+.tree_link .link:hover {
+  background: var(--purple);
+  color: var(--body-bg-color);
+
+  transition: ease 0.5s;
+}
+
+.tree_complete .social_links {
+  margin-top: 68px;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 29px;
+}
+
+.social_links .social {
+  transform: scale(0.9);
+
+  transition: ease 0.2s;
+}
+
+.social_links .social:hover {
+  transform: scale(1);
+}
